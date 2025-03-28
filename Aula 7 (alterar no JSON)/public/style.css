@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;400;500&display=swap');
+
+:root {
+  --primary-color: #00f7ff;
+  --secondary-color: #6b38fb;
+  --bg-color: #0a0a1a;
+  --card-bg: rgba(16, 18, 34, 0.8);
+  --text-color: #e0e0ff;
+  --success-color: #00ff9d;
+  --input-bg: rgba(8, 8, 24, 0.6);
+  --glow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: linear-gradient(135deg, var(--bg-color), #141432);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-shadow: var(--glow);
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    background: var(--input-bg);
+    border: 1px solid rgba(0, 247, 255, 0.2);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 12px 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    resize: vertical; 
+    margin-bottom: 18px;  
+}
+
+button {
+    width: 100%;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 247, 255, 0.3);
+}
+
+label{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    text-shadow: var(--glow);
+    position: relative;
+}
